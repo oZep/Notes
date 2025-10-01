@@ -34,7 +34,7 @@ OSI Model that matter
 - internet Layer (IP and routing)
 - network Access Layer (Ethernet, wi-fi, or whatever)
 
-# IP Addresses, structs, and Data Munging
+## IP Addresses, structs, and Data Munging
 The Internet Protocol Version 4 (IPv4)
 - has addresses made up of four bytes (octets)
 - written in dots and numbers form (192.0.2.111), 32 bits
