@@ -58,6 +58,6 @@ IPv4, IPv6 compatibility
 - to represent an IPv4 address as an IPv6 address use the following notation: `::ffff:[ipv4]`
 
 Subnets
-- 
+- organizational reasons
 
   
