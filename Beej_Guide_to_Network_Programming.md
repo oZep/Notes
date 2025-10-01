@@ -29,10 +29,10 @@ OSI Layers
 - physical
 
 OSI Model that matter
-- application Layer (telnet, ftp, etc.)
-- host-to-Host Transport Layer (TCP, UDP)
-- internet Layer (IP and routing)
-- network Access Layer (Ethernet, wi-fi, or whatever)
+- Application Layer (telnet, ftp, etc.)
+- Host-to-Host Transport Layer (TCP, UDP)
+- Internet Layer (IP and routing)
+- Network Access Layer (Ethernet, wi-fi, or whatever)
 
 ## IP Addresses, structs, and Data Munging
 The Internet Protocol Version 4 (IPv4)
