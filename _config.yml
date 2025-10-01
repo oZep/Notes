@@ -1,0 +1,44 @@
+title: My Book Notes
+description: Notes about books I've been reading
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections for organizing book notes
+collections:
+  books:
+    output: true
+    permalink: /books/:name/
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md

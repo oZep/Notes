@@ -1,0 +1,230 @@
+/* Custom Theme for Book Notes */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.site-header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px 0;
+  margin-bottom: 30px;
+}
+
+.site-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.site-title a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #3498db;
+}
+
+.site-description {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.site-header nav {
+  margin-top: 15px;
+}
+
+.site-header nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+
+.site-header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Main content */
+main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Book notes */
+.book-note header {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.book-note h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.book-note .author {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.book-note .date {
+  font-size: 0.9rem;
+  color: #95a5a6;
+  margin-top: 5px;
+}
+
+.book-note .content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.book-note .content h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.book-note .content h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.book-note .content p {
+  margin-bottom: 15px;
+}
+
+.book-note .content ul,
+.book-note .content ol {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.book-note .content blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #555;
+  font-style: italic;
+}
+
+.book-note .content code {
+  background-color: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.book-note .content pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 15px;
+}
+
+.book-note .content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Tags */
+.tags {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+/* Book list */
+.book-list {
+  list-style: none;
+}
+
+.book-list li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border-left: 4px solid #3498db;
+}
+
+.book-list li a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.book-list li a:hover {
+  color: #3498db;
+}
+
+.book-list li .author {
+  color: #7f8c8d;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .book-note h1 {
+    font-size: 2rem;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+  }
+}

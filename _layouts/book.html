@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<article class="book-note">
+  <header>
+    <h1>{{ page.title }}</h1>
+    {% if page.author %}
+    <p class="author">by {{ page.author }}</p>
+    {% endif %}
+    {% if page.date %}
+    <p class="date">Notes taken on {{ page.date | date: "%B %d, %Y" }}</p>
+    {% endif %}
+  </header>
+  
+  <div class="content">
+    {{ content }}
+  </div>
+  
+  {% if page.tags %}
+  <footer>
+    <div class="tags">
+      Tags: 
+      {% for tag in page.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </footer>
+  {% endif %}
+</article>
