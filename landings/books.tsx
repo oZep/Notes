@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { ThemeContext } from '../src/App';
 import { marked } from 'marked';
 import sidebarDataImport from '../src/sidebarData.json';
 
@@ -8,12 +9,10 @@ const sidebarData: any = sidebarDataImport;
 function BooksLanding() {
     const [selectedBook, setSelectedBook] = useState<any | null>(null);
     const [markdownHtml, setMarkdownHtml] = useState<string>('');
-    const [isPlain, setIsPlain] = useState(false);
+    const { theme } = useContext(ThemeContext);
 
-    const bgColor = isPlain ? 'bg-white' : 'bg-[#d4c4b0]';
-    const textColor = isPlain ? 'text-black' : 'text-black';
-    const linkColor = isPlain ? 'text-blue-600' : 'text-black';
-    const borderColor = isPlain ? 'border-gray-300' : 'border-black';
+    const bgColor = theme === 'dark' ? 'bg-[#224415]' : 'bg-[#FEF3BB]';
+    const textColor = theme === 'dark' ? 'text-white' : 'text-black';
 
     useEffect(() => {
         if (selectedBook && selectedBook.file) {
@@ -34,8 +33,8 @@ function BooksLanding() {
 
     return (
         <div className={`min-h-screen ${bgColor} ${textColor} font-mono py-12`}>
-            <div className="max-w-4xl mx-auto px-8">
-                {/* ASCII art border top */}
+            <div className="max-w-4xl">
+                <h1 className="text-2xl font-bold mb-4">#books</h1>
                 <div className="text-center mb-8">
                 <table align="center">
                     <th>Currently Reading</th><th>&nbsp;</th>
