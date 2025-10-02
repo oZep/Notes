@@ -23,21 +23,25 @@ function Home() {
       <div className="space-y-6">
         <h1 className="text-2xl font-bold mb-4">#oZep</h1>
           <div className={`border-2 p-4 mb-4 text-center text-gray-500 ${borderColor} ${bgBox}`}>
-          <div className="h-48 flex items-center justify-center">[image]</div>
+          <div className="h-48 flex items-center justify-center"><img src="https://github.com/oZep/oZep/blob/main/scrapped-idea/img/fish.webp?raw=true" alt="[image]" /></div>
         </div>
-        <p className="text-sm text-center">image</p>
-        <p>info about me</p>
-        <p>info about site</p>
+        <p className="text-sm text-center">Fish Are Cool</p>
+        <p>Welcome to my blog!</p>
+        <p>I keep/write a lot of notes but never really organized them in one place.</p>
+        <p>My hopes are that making this and hosting it will motivate me to dig through my junk drawer and find them all.</p>
         <p>Thanks for stopping by.</p>
         <div className={`border-2 p-4 space-y-4 ${borderColor} ${bgBox}`}>
-          <p> important info </p>
+          <p> ! important info !</p>
+          <p> It's a given that this site will always be a work in progress. </p>
+          <p> If you find any issues, please let me know. </p>
+          <p> If you have suggestions or want to contribute, please reach out. </p>
         </div>
       </div>
       <div className="mt-12 text-center">
         <div className="space-x-4">
-          <a href="#contact" className={`${linkColor} underline hover:no-underline`}>contact</a>
-          <a href="#github" className={`${linkColor} underline hover:no-underline`}>github</a>
-          <a href="#itch" className={`${linkColor} underline hover:no-underline`}>itch.io</a>
+            <a href="https://joeyissa.is-a.dev/" className={`${linkColor} underline hover:no-underline`} target="_blank" rel="noopener noreferrer">contact</a>
+          <a href="https://github.com/oZep/" className={`${linkColor} underline hover:no-underline`} target="_blank" rel="noopener noreferrer">github</a>
+          <a href="https://ozep.itch.io/" className={`${linkColor} underline hover:no-underline`} target="_blank" rel="noopener noreferrer">itch.io</a>
           <a href="#rss" className={`${linkColor} underline hover:no-underline`}>rss</a>
         </div>
       </div>
@@ -124,10 +128,6 @@ function App() {
                 </ul>
               </div>
               <div>
-                <span className="font-bold cursor-pointer" onClick={() => navigate('/projects')}>projects</span>
-                {/* Add project links if needed */}
-              </div>
-              <div>
                 <a href="#mail" className={`${linkColor} font-bold cursor-pointer`}>mail list</a>
               </div>
               <div>
@@ -150,7 +150,6 @@ function App() {
                 <Route path="/event/:eventId" element={<EventPage />} />
                 <Route path="/notes" element={<NotesLanding />} />
                 <Route path="/note/:noteId" element={<NotePage />} />
-                <Route path="/projects" element={<ProjectsLanding />} />
               </Routes>
             </div>
           </div>
@@ -232,6 +231,4 @@ function NotePage() {
 import BooksLanding from '../landings/books';
 import EventsLanding from '../landings/events';
 import NotesLanding from '../landings/notes';
-import ProjectsLanding from '../landings/projects';
-
 export default App;
