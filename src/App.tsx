@@ -70,26 +70,44 @@ function App() {
   const borderColor = theme === 'dark' ? 'border-[#FEF3BB]' : 'border-[#224415]';
   const navigate = useNavigate();
 
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <div className={`min-h-screen ${bgColor} ${textColor} font-mono py-12`}>
-        <div className="max-w-4xl mx-auto px-8">
+      <div className={`min-h-screen ${bgColor} ${textColor} font-mono py-4 sm:py-12`}>
+        <div className="max-w-4xl mx-auto px-2 sm:px-8">
           <div className="text-center mb-8">
             {/*<pre className="text-sm">▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</pre>*/}
           </div>
-          <div className="flex gap-12">
-            <nav className="text-right space-y-1 pt-8 flex-shrink-0">
+          {/* Mobile sidebar toggle */}
+          <div className="sm:hidden flex justify-between items-center mb-4">
+            <button
+              className="border px-3 py-2 rounded text-sm"
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+            >
+              {sidebarOpen ? 'Close Menu' : 'Menu'}
+            </button>
+            <button
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              className={`ml-2 underline hover:no-underline cursor-pointer border-2 ${borderColor} px-3 py-1 rounded`}
+            >
+              {theme === 'dark' ? 'light orange' : 'dark green'}
+            </button>
+          </div>
+          <div className="flex flex-col sm:flex-row sm:gap-12">
+            {/* Sidebar */}
+            <nav className={`sm:text-right space-y-1 pt-4 sm:pt-8 flex-shrink-0 ${sidebarOpen ? '' : 'hidden'} sm:block bg-opacity-90 sm:bg-transparent bg-[#FEF3BB] sm:bg-inherit p-4 sm:p-0 rounded sm:rounded-none shadow sm:shadow-none z-20`}> 
               <div>
-                <Link to="/" className={`${linkColor} font-bold cursor-pointer`}>about</Link>
+                <Link to="/" className={`${linkColor} font-bold cursor-pointer`} onClick={() => setSidebarOpen(false)}>about</Link>
               </div>
               <div>
-                <span className="font-bold cursor-pointer" onClick={() => navigate('/books')}>books</span>
+                <span className="font-bold cursor-pointer" onClick={() => {navigate('/books'); setSidebarOpen(false);}}>books</span>
                 <ul className="pl-4 text-xs">
                   {sidebarData.books.map((book: any) => (
                     <li key={book.file}>
                       <Link
                         className={`${linkColor} underline hover:no-underline cursor-pointer`}
                         to={`/book/${encodeURIComponent(book.file.replace(/\.md$/, ''))}`}
+                        onClick={() => setSidebarOpen(false)}
                       >
                         {book.title}
                       </Link>
@@ -98,13 +116,14 @@ function App() {
                 </ul>
               </div>
               <div>
-                <span className="font-bold cursor-pointer" onClick={() => navigate('/events')}>events</span>
+                <span className="font-bold cursor-pointer" onClick={() => {navigate('/events'); setSidebarOpen(false);}}>events</span>
                 <ul className="pl-4 text-xs">
                   {sidebarData.events.map((event: any) => (
                     <li key={event.file}>
                       <Link
                         className={`${linkColor} underline hover:no-underline cursor-pointer`}
                         to={`/event/${encodeURIComponent(event.file.replace(/\.md$/, ''))}`}
+                        onClick={() => setSidebarOpen(false)}
                       >
                         {event.title}
                       </Link>
@@ -113,13 +132,14 @@ function App() {
                 </ul>
               </div>
               <div>
-                <span className="font-bold cursor-pointer" onClick={() => navigate('/notes')}>notes</span>
+                <span className="font-bold cursor-pointer" onClick={() => {navigate('/notes'); setSidebarOpen(false);}}>notes</span>
                 <ul className="pl-4 text-xs">
                   {sidebarData.notes.map((note: any) => (
                     <li key={note.file}>
                       <Link
                         className={`${linkColor} underline hover:no-underline cursor-pointer`}
                         to={`/note/${encodeURIComponent(note.file.replace(/\.pdf$/, ''))}`}
+                        onClick={() => setSidebarOpen(false)}
                       >
                         {note.title}
                       </Link>
@@ -128,9 +148,9 @@ function App() {
                 </ul>
               </div>
               <div>
-                <a href="#mail" className={`${linkColor} font-bold cursor-pointer`}>mail list</a>
+                <a href="#mail" className={`${linkColor} font-bold cursor-pointer`} onClick={() => setSidebarOpen(false)}>mail list</a>
               </div>
-              <div>
+              <div className="hidden sm:block">
                 <div className="flex justify-end mb-4">
                   <button
                     onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -141,7 +161,8 @@ function App() {
                 </div>
               </div>
             </nav>
-            <div className="flex-1">
+            {/* Main content */}
+            <div className="flex-1 min-w-0">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/books" element={<BooksLanding />} />
