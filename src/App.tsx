@@ -169,7 +169,7 @@ function App() {
                 <Route path="/book/:bookId" element={<BookPage />} />
                 <Route path="/events" element={<EventsLanding />} />
                 <Route path="/event/:eventId" element={<EventPage />} />
-                <Route path="/blog/notes" element={<NotesLanding />} />
+                <Route path="/notes" element={<NotesLanding />} />
                 <Route path="/note/:noteId" element={<NotePage />} />
               </Routes>
             </div>
