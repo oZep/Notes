@@ -81,7 +81,7 @@ function App() {
           {/* Mobile sidebar toggle */}
           <div className="sm:hidden flex justify-between items-center mb-4">
             <button
-              className="border px-3 py-2 rounded text-sm"
+              className={`border-2 ${borderColor} px-3 py-2 rounded text-sm`}
               onClick={() => setSidebarOpen(!sidebarOpen)}
             >
               {sidebarOpen ? 'Close Menu' : 'Menu'}
@@ -95,7 +95,7 @@ function App() {
           </div>
           <div className="flex flex-col sm:flex-row sm:gap-12">
             {/* Sidebar */}
-            <nav className={`sm:text-right space-y-1 pt-4 sm:pt-8 flex-shrink-0 ${sidebarOpen ? '' : 'hidden'} sm:block bg-opacity-90 sm:bg-transparent bg-[#FEF3BB] sm:bg-inherit p-4 sm:p-0 rounded sm:rounded-none shadow sm:shadow-none z-20`}> 
+            <nav className={`sm:text-right space-y-1 pt-4 sm:pt-8 flex-shrink-0 ${sidebarOpen ? '' : 'hidden'} sm:block bg-opacity-90 sm:bg-transparent bg-${borderColor} sm:bg-inherit p-4 sm:p-0 rounded sm:rounded-none shadow-md z-20`}> 
               <div>
                 <Link to="/" className={`${linkColor} font-bold cursor-pointer`} onClick={() => setSidebarOpen(false)}>about</Link>
               </div>
