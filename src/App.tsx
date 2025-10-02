@@ -169,7 +169,7 @@ function App() {
                 <Route path="/book/:bookId" element={<BookPage />} />
                 <Route path="/events" element={<EventsLanding />} />
                 <Route path="/event/:eventId" element={<EventPage />} />
-                <Route path="/notes" element={<NotesLanding />} />
+                <Route path="/blog/notes" element={<NotesLanding />} />
                 <Route path="/note/:noteId" element={<NotePage />} />
               </Routes>
             </div>
@@ -187,7 +187,8 @@ function BookPage() {
   const [markdownHtml, setMarkdownHtml] = useState('');
   useEffect(() => {
     if (bookId) {
-      fetch(`/books/${bookId}.md`).then(res => res.text()).then(md => {
+      const base = import.meta.env.BASE_URL || '/blog/';
+      fetch(`${base}books/${bookId}.md`).then(res => res.text()).then(md => {
         const result = marked.parse(md);
         if (result instanceof Promise) {
           result.then((html: string) => setMarkdownHtml(html));
@@ -216,7 +217,8 @@ function EventPage() {
   const [markdownHtml, setMarkdownHtml] = useState('');
   useEffect(() => {
     if (eventId) {
-      fetch(`/events/${eventId}.md`).then(res => res.text()).then(md => {
+      const base = import.meta.env.BASE_URL || '/blog/';
+      fetch(`${base}events/${eventId}.md`).then(res => res.text()).then(md => {
         const result = marked.parse(md);
         if (result instanceof Promise) {
           result.then((html: string) => setMarkdownHtml(html));
