@@ -1,0 +1,22 @@
+{
+  "books": [
+    {
+      "file": "Beej_Guide_to_Network_Programming.md",
+      "title": "Beej's Guide to Network Programming",
+      "html": "pages/Beej_Guide_to_Network_Programming.html"
+    },
+    {
+      "file": "RFC_793.md",
+      "title": "TRANSMISSION CONTROL PROTOCOL",
+      "html": "pages/RFC_793.html"
+    }
+  ],
+  "events": [
+    {
+      "file": "Hackathons.md",
+      "title": "Hackathons.md",
+      "html": "pages/Hackathons.html"
+    }
+  ],
+  "notes": []
+}
