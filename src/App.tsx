@@ -95,7 +95,7 @@ function App() {
           </div>
           <div className="flex flex-col sm:flex-row sm:gap-12">
             {/* Sidebar */}
-            <nav className={`sm:text-right space-y-1 pt-4 sm:pt-8 flex-shrink-0 ${sidebarOpen ? '' : 'hidden'} sm:block bg-opacity-90 sm:bg-transparent bg-${borderColor} sm:bg-inherit p-4 sm:p-0 rounded sm:rounded-none shadow-md z-20`}> 
+            <nav className={`border-2 ${borderColor}  sm:text-right space-y-1 pt-4 sm:pt-8 flex-shrink-0 ${sidebarOpen ? '' : 'hidden'} sm:block bg-opacity-90 sm:bg-transparent sm:border-none sm:bg-inherit p-4 sm:p-0 rounded sm:rounded-none z-20`}> 
               <div>
                 <Link to="/" className={`${linkColor} font-bold cursor-pointer`} onClick={() => setSidebarOpen(false)}>about</Link>
               </div>
