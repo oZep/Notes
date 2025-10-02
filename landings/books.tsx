@@ -36,7 +36,7 @@ function BooksLanding() {
             <div className="mb-8">
             </div>
             <div className="max-w-4xl">
-                <h1 className="text-2xl font-bold mb-4">#books</h1>
+                <h1 className="text-2xl font-bold mb-4">books</h1>
                 <div className="text-center mb-8">
                 <table align="center">
                     <th>Currently Reading</th><th>&nbsp;</th>

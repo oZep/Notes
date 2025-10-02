@@ -10,7 +10,7 @@ function EventsLanding() {
             <div className="mb-8">
             </div>
         <div className="max-w-4xl">
-        <h1 className="text-2xl font-bold mb-4">#events</h1>
+        <h1 className="text-2xl font-bold mb-4">events</h1>
         <div className="text-center mb-8">
          Landing page Content coming soon...
         </div>

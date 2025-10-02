@@ -9,7 +9,7 @@ function NotesLanding() {
       <div className={`min-h-screen ${bgColor} ${textColor} font-mono`}>
             <div className="mb-8">
             </div>
-        <h1 className="text-2xl font-bold mb-4">#notes</h1>
+        <h1 className="text-2xl font-bold mb-4">notes</h1>
         <div className="text-center mb-8">
          Landing page Content coming soon...
         </div>
