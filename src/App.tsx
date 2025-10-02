@@ -71,7 +71,7 @@ function App() {
       <div className={`min-h-screen ${bgColor} ${textColor} font-mono py-12`}>
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center mb-8">
-            <pre className="text-sm">▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</pre>
+            {/*<pre className="text-sm">▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰</pre>*/}
           </div>
           <div className="flex gap-12">
             <nav className="text-right space-y-1 pt-8 flex-shrink-0">
