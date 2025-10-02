@@ -19,14 +19,13 @@ function Home() {
   return (
     <>
       <div className="mb-8">
+      </div>
+      <div className="space-y-6">
         <h1 className="text-2xl font-bold mb-4">#oZep</h1>
-        <div className={`border-2 p-4 mb-4 text-center text-gray-500 ${borderColor} ${bgBox}`}>
+          <div className={`border-2 p-4 mb-4 text-center text-gray-500 ${borderColor} ${bgBox}`}>
           <div className="h-48 flex items-center justify-center">[image]</div>
         </div>
         <p className="text-sm text-center">image</p>
-      </div>
-      <div className="space-y-6">
-        <h2 className="text-xl font-bold">#Hi</h2>
         <p>info about me</p>
         <p>info about site</p>
         <p>Thanks for stopping by.</p>

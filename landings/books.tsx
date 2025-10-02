@@ -32,7 +32,9 @@ function BooksLanding() {
     }, [selectedBook]);
 
     return (
-        <div className={`min-h-screen ${bgColor} ${textColor} font-mono py-12`}>
+        <div className={`min-h-screen ${bgColor} ${textColor} font-mono`}>
+            <div className="mb-8">
+            </div>
             <div className="max-w-4xl">
                 <h1 className="text-2xl font-bold mb-4">#books</h1>
                 <div className="text-center mb-8">
