@@ -148,7 +148,7 @@ function App() {
                 </ul>
               </div>
               <div>
-                <a href="#mail" className={`${linkColor} font-bold cursor-pointer`} onClick={() => setSidebarOpen(false)}>mail list</a>
+                <a className={`${linkColor} font-bold cursor-pointer`} onClick={() => setSidebarOpen(false)}>╰┈➤</a>
               </div>
               <div className="hidden sm:block">
                 <div className="flex justify-end mb-4">
@@ -199,6 +199,7 @@ function BookPage() {
     }
   }, [bookId]);
   const bg = theme === 'dark' ? '#224415' : '#FEF3BB';
+  const border = theme === 'dark' ? '#FEF3BB' : '#224415';
   const color = theme === 'dark' ? 'white' : 'black';
   // Custom style for headers
   const headerColor = theme === 'dark' ? 'white' : 'black';
@@ -206,6 +207,7 @@ function BookPage() {
     <div className="prose prose-neutral max-w-none" style={{ background: bg, color, padding: '1.5rem', borderRadius: '0.5rem', position: 'relative' }}>
       <style>{`
         .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { color: ${headerColor} !important; }
+        .prose a, .prose code { color: ${border} !important; }
       `}</style>
       <div dangerouslySetInnerHTML={{ __html: markdownHtml }} />
     </div>
@@ -229,6 +231,7 @@ function EventPage() {
     }
   }, [eventId]);
   const bg = theme === 'dark' ? '#224415' : '#FEF3BB';
+  const border = theme === 'dark' ? '#FEF3BB' : '#224415';
   const color = theme === 'dark' ? 'white' : 'black';
   // Custom style for headers
   const headerColor = theme === 'dark' ? 'white' : 'black';
@@ -236,6 +239,7 @@ function EventPage() {
     <div className="prose prose-neutral max-w-none" style={{ background: bg, color, padding: '1.5rem', borderRadius: '0.5rem', position: 'relative' }}>
       <style>{`
         .prose a, .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { color: ${headerColor} !important; }
+        .prose a, .prose code { color: ${border} !important; }
       `}</style>
       <div dangerouslySetInnerHTML={{ __html: markdownHtml }} />
     </div>

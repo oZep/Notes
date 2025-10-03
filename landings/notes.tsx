@@ -10,8 +10,12 @@ function NotesLanding() {
             <div className="mb-8">
             </div>
         <h1 className="text-2xl font-bold mb-4">notes</h1>
-        <div className="text-center mb-8">
-         Landing page Content coming soon...
+        <div className="mb-8 space-y-6">
+         <p>At last, I have done it.</p>
+         <p>All my files in one <em>easily accessible</em> place.</p>
+         <p>This has honestly been a long time coming. After switching from Macbook to PC on the daily, it's so easy to lose track of where I put things.</p>
+         <p>Hopefully this will make it easier to find things later. And maybe I'll even get around to organizing them a bit.</p>
+         <p>But no promises.</p>
         </div>
       </div>
   );

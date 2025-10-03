@@ -11,8 +11,8 @@ function EventsLanding() {
             </div>
         <div className="max-w-4xl">
         <h1 className="text-2xl font-bold mb-4">events</h1>
-        <div className="text-center mb-8">
-         Landing page Content coming soon...
+        <div className="mb-8 space-y-6">
+        <p>I like attending hackathons, conferences, and all types of meetups. This will mostly be an archive of pictures and notes from those events.</p>
         </div>
       </div>
       </div>

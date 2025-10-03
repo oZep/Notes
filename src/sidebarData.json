@@ -13,9 +13,34 @@
   ],
   "events": [
     {
-      "file": "Hackathons.md",
-      "title": "Hackathons",
-      "html": "pages/Hackathons.html"
+      "file": "CS-Games-2024.md",
+      "title": "CS-Games-2024.md",
+      "html": "pages/CS-Games-2024.html"
+    },
+    {
+      "file": "HackHers-2024.md",
+      "title": "HackHers-2024.md",
+      "html": "pages/HackHers-2024.html"
+    },
+    {
+      "file": "HacktheHill-2024.md",
+      "title": "HacktheHill-2024.md",
+      "html": "pages/HacktheHill-2024.html"
+    },
+    {
+      "file": "cuHacking-6.md",
+      "title": "cuHacking-6.md",
+      "html": "pages/cuHacking-6.html"
+    },
+    {
+      "file": "uOttaHack-6.md",
+      "title": "uOttaHack-6.md",
+      "html": "pages/uOttaHack-6.html"
+    },
+    {
+      "file": "uOttaHack-7.md",
+      "title": "uOttaHack-7.md",
+      "html": "pages/uOttaHack-7.html"
     }
   ],
   "notes": [
