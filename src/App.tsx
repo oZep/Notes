@@ -138,7 +138,7 @@ function App() {
                     <li key={note.file}>
                       <Link
                         className={`${linkColor} underline hover:no-underline cursor-pointer`}
-                        to={`/note/${encodeURIComponent(note.file.replace(/\.pdf$/, ''))}`}
+                        to={`/notes/${encodeURIComponent(note.file.replace(/\.pdf$/, ''))}`}
                         onClick={() => setSidebarOpen(false)}
                       >
                         {note.title}
@@ -170,7 +170,7 @@ function App() {
                 <Route path="/events" element={<EventsLanding />} />
                 <Route path="/event/:eventId" element={<EventPage />} />
                 <Route path="/notes" element={<NotesLanding />} />
-                <Route path="/note/:noteId" element={<NotePage />} />
+                <Route path="/notes/:noteId" element={<NotePage />} />
               </Routes>
             </div>
           </div>
@@ -247,7 +247,8 @@ function NotePage() {
   // For PDFs, just link to the file
   const border = theme === 'dark' ? '#224415' : '#FEF3BB';
   const bg = theme === 'dark' ? 'white' : '#FEF3BB';
-  return <iframe src={`/notes/${noteId}.pdf`} title={noteId} className="w-full h-[80vh] border-2" style={{ borderColor: border, background: bg }} />;
+  const base = import.meta.env.BASE_URL || '/blog/';
+  return <iframe src={`${base}notes/${noteId}.pdf`} title={noteId} className="w-full h-[80vh] border-2" style={{ borderColor: border, background: bg }} />;
 }
 
 // Import landing pages

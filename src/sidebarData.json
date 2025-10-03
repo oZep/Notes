@@ -35,6 +35,11 @@
       "html": "notes/CEG3185-Networking-MoreMidterm.pdf"
     },
     {
+      "file": "CSI2110-DSA-Final-Cluttered.pdf",
+      "title": "CSI2110-DSA-Final-Cluttered",
+      "html": "notes/CSI2110-DSA-Final-Cluttered.pdf"
+    },
+    {
       "file": "CSI2110-DSA-Final.pdf",
       "title": "CSI2110-DSA-Final",
       "html": "notes/CSI2110-DSA-Final.pdf"
@@ -50,24 +55,19 @@
       "html": "notes/CSI2132-Database-Final.pdf"
     },
     {
-      "file": "CSI3120-ProgLanCon-Final.pdf",
-      "title": "CSI3120-ProgLanCon-Final",
-      "html": "notes/CSI3120-ProgLanCon-Final.pdf"
+      "file": "CSI3120-ProgLanCon-FinalCode.pdf",
+      "title": "CSI3120-ProgLanCon-FinalCode",
+      "html": "notes/CSI3120-ProgLanCon-FinalCode.pdf"
     },
     {
-      "file": "CSI3120-ProgLanCon-Final2.pdf",
-      "title": "CSI3120-ProgLanCon-Final2",
-      "html": "notes/CSI3120-ProgLanCon-Final2.pdf"
+      "file": "CSI3120-ProgLanCon-FinalConcepts.pdf",
+      "title": "CSI3120-ProgLanCon-FinalConcepts",
+      "html": "notes/CSI3120-ProgLanCon-FinalConcepts.pdf"
     },
     {
       "file": "CSI3140-WWW-Midterm.pdf",
       "title": "CSI3140-WWW-Midterm",
       "html": "notes/CSI3140-WWW-Midterm.pdf"
-    },
-    {
-      "file": "More-SQL-Review.pdf",
-      "title": "More-SQL-Review",
-      "html": "notes/More-SQL-Review.pdf"
     },
     {
       "file": "PRACTICE_EXAM_FILLED.pdf",
@@ -90,14 +90,14 @@
       "html": "notes/SEG2105-SoftwareEngineering-Midterm.pdf"
     },
     {
+      "file": "SQL-Review-More.pdf",
+      "title": "SQL-Review-More",
+      "html": "notes/SQL-Review-More.pdf"
+    },
+    {
       "file": "SQL-Review.pdf",
       "title": "SQL-Review",
       "html": "notes/SQL-Review.pdf"
-    },
-    {
-      "file": "review_session_csi2110_oZep.pdf",
-      "title": "review_session_csi2110_oZep",
-      "html": "notes/review_session_csi2110_oZep.pdf"
     }
   ]
 }
