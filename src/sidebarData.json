@@ -18,5 +18,86 @@
       "html": "pages/Hackathons.html"
     }
   ],
-  "notes": []
+  "notes": [
+    {
+      "file": "CEG2136-CompArch-Midterm.pdf",
+      "title": "CEG2136-CompArch-Midterm",
+      "html": "notes/CEG2136-CompArch-Midterm.pdf"
+    },
+    {
+      "file": "CEG3185-Networking-Midterm.pdf",
+      "title": "CEG3185-Networking-Midterm",
+      "html": "notes/CEG3185-Networking-Midterm.pdf"
+    },
+    {
+      "file": "CEG3185-Networking-MoreMidterm.pdf",
+      "title": "CEG3185-Networking-MoreMidterm",
+      "html": "notes/CEG3185-Networking-MoreMidterm.pdf"
+    },
+    {
+      "file": "CSI2110-DSA-Final.pdf",
+      "title": "CSI2110-DSA-Final",
+      "html": "notes/CSI2110-DSA-Final.pdf"
+    },
+    {
+      "file": "CSI2132-Database-Final-Better.pdf",
+      "title": "CSI2132-Database-Final-Better",
+      "html": "notes/CSI2132-Database-Final-Better.pdf"
+    },
+    {
+      "file": "CSI2132-Database-Final.pdf",
+      "title": "CSI2132-Database-Final",
+      "html": "notes/CSI2132-Database-Final.pdf"
+    },
+    {
+      "file": "CSI3120-ProgLanCon-Final.pdf",
+      "title": "CSI3120-ProgLanCon-Final",
+      "html": "notes/CSI3120-ProgLanCon-Final.pdf"
+    },
+    {
+      "file": "CSI3120-ProgLanCon-Final2.pdf",
+      "title": "CSI3120-ProgLanCon-Final2",
+      "html": "notes/CSI3120-ProgLanCon-Final2.pdf"
+    },
+    {
+      "file": "CSI3140-WWW-Midterm.pdf",
+      "title": "CSI3140-WWW-Midterm",
+      "html": "notes/CSI3140-WWW-Midterm.pdf"
+    },
+    {
+      "file": "More-SQL-Review.pdf",
+      "title": "More-SQL-Review",
+      "html": "notes/More-SQL-Review.pdf"
+    },
+    {
+      "file": "PRACTICE_EXAM_FILLED.pdf",
+      "title": "PRACTICE_EXAM_FILLED",
+      "html": "notes/PRACTICE_EXAM_FILLED.pdf"
+    },
+    {
+      "file": "Relational-Calculus-Review.pdf",
+      "title": "Relational-Calculus-Review",
+      "html": "notes/Relational-Calculus-Review.pdf"
+    },
+    {
+      "file": "SEG2105-Final-CheatSheet.pdf",
+      "title": "SEG2105-Final-CheatSheet",
+      "html": "notes/SEG2105-Final-CheatSheet.pdf"
+    },
+    {
+      "file": "SEG2105-SoftwareEngineering-Midterm.pdf",
+      "title": "SEG2105-SoftwareEngineering-Midterm",
+      "html": "notes/SEG2105-SoftwareEngineering-Midterm.pdf"
+    },
+    {
+      "file": "SQL-Review.pdf",
+      "title": "SQL-Review",
+      "html": "notes/SQL-Review.pdf"
+    },
+    {
+      "file": "review_session_csi2110_oZep.pdf",
+      "title": "review_session_csi2110_oZep",
+      "html": "notes/review_session_csi2110_oZep.pdf"
+    }
+  ]
 }
