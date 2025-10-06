@@ -15,7 +15,6 @@ function NotesLanding() {
          <p>All my files in one <em>easily accessible</em> place.</p>
          <p>This has honestly been a long time coming. After switching from Macbook to PC on the daily, it's so easy to lose track of where I put things.</p>
          <p>Hopefully this will make it easier to find things later. And maybe I'll even get around to organizing them a bit.</p>
-         <p>But no promises.</p>
         </div>
       </div>
   );

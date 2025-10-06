@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-  "build": "vite build",
-  "postbuild": "node scripts/copy-assets.cjs",
+    "build": "vite build",
+    "postbuild": "node scripts/copy-assets.cjs && cp dist/index.html dist/404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "generate": "node generateSidebarData.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run generate && npm run build && npm run postbuild && gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
