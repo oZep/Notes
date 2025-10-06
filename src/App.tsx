@@ -205,7 +205,7 @@ function BookPage() {
   return (
     <div className="prose prose-neutral max-w-none" style={{ background: bg, color, padding: '1.5rem', borderRadius: '0.5rem', position: 'relative' }}>
       <style>{`
-        .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { color: ${headerColor} !important; }
+        .prose h1, .prose b, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 { color: ${headerColor} !important; }
       `}</style>
       <div dangerouslySetInnerHTML={{ __html: markdownHtml }} />
     </div>
